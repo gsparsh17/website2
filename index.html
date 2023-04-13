@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .bg1{
+        background-image: url("hg.jpg");
+        background-size: auto;
+        width: 100%;
+        top: 20px;
+        height: 1000px;
+    }
+    .up{
+        height: 200px;
+        opacity: 65%;
+        background-color: white;
+    }
+    .up1{
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        left: 380px;
+    }
+    .headi{
+        padding-top: 20px;
+      
+      font-size: 80px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      margin-top: 40px;
+      display: inline-block;
+      
+    }
+    .headi{
+        margin: 20px 0px 10px 0px;
+    }
+    #logo{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+       width: 150px;
+       height: 150px;
+       margin: 10px 10px 10px 10px;
+       display: inline-block;
+    }
+    .order{
+        background-color: aliceblue;
+        list-style: none;
+        margin: 0px;
+        margin-left: 60px;
+        padding-left: 60px;
+        opacity: 70%;
+        margin-left: 0px;
+        position: static;
+    }
+    .order:hover{
+        opacity: 1;
+    }
+    ul li a{
+        font-size: 15px;
+        text-decoration:solid;
+        color: black;
+        background-color: aliceblue;
+        padding: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .index{
+        display: inline-block;   
+        padding: 0px;
+        margin: 15px;
+    }
+    ul li a:hover{
+       background-color:blueviolet;
+       border-radius: 10px;
+       color:aqua;
+       /* font-weight: bold; */
+    }
+    .dailogue{
+        color: aqua;
+        background-color: aliceblue;
+        width: 90px;
+        padding: 6px;
+        padding-right: 5px;  
+        padding-left: 5px;     
+        padding-top: 15px;
+        padding-bottom: 12px;
+        text-align: center;
+        position: relative;
+        left: 2px;
+        border-radius: 5px;
+        font-size: 14px;
+        border-bottom: 2px solid black;
+
+    }
+    .dropdown{
+        display: none;
+        flex-direction: column;
+        margin: 0px;
+        list-style: none;
+        position: absolute;
+        padding: 0px;
+        z-index: +1;
+        border-radius: 20px;
+        box-shadow: 4px 4px 8px 0px rgb(0.5,0.5,0,0.5);
+    }
+    ul li:hover div ul{
+      display: flex;
+    }
+    .head{
+        font-weight: bold;
+        color: black;
+        font-family:cursive;
+        text-align: center;
+        width: 80%;
+        margin:auto;
+    }
+    div p a{
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 8px;
+        font-size: 17px;
+    }
+    div p a:hover{
+        background-color: blueviolet;
+        padding: 15px;
+        font-size: 17px;
+    }
+    .mo{
+        background-color: aliceblue;
+        opacity: 70%;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .gallery{
+        border-radius: 20px;
+        box-shadow: 4px 6px 6px 4px rgb(0,0,0,0.5);
+        height: 250px;
+        width: 250px;
+        opacity: 1;
+        background-color: aliceblue;
+    }
+    @keyframes hel{
+        0% { width:250px; height:250px; opacity:1;}
+        25% { width:300px; height:300px; opacity:1; font-display: ;}
+        50% { width:300px; height:300px; opacity:1;}
+        100% { width:250px; height:250px; opacity:1;}
+    }
+    #a{
+        animation-name: hel1;
+        animation-name: hel;
+        animation-duration: 6s;
+        animation-delay: 1s;
+    }
+    #b{
+        animation-name: hel;
+        animation-duration: 6s;
+        animation-delay: 7s;
+    }
+    #c{
+        animation-name: hel;
+        animation-duration: 6s;
+        animation-delay: 12s;
+    }
+    #d{
+        animation-name: hel;
+        animation-duration: 6s;
+        animation-delay: 17s;
+    }
+    .slide
+    {
+        /* background-color: black; */
+        display: flex;
+        margin-left: 120px;
+        margin-right: 120px;
+        justify-content: space-between;
+        margin-top: 60px;
+        padding-top: 50px;
+        height: 350px;
+        position: relative;
+        top: -450px;
+        opacity: 1;
+        z-index: +1;
+    }
+    .slide::before
+    {
+        background-color: aqua;
+        opacity: 1;
+    }
+    .hello
+    {
+        height: 200px;
+        width: 200px;
+        background-image: url("pngegg.png");
+        background-size: cover;
+        /* background-color: blue; */
+        animation-name: hel1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+    }
+    @keyframes hel1{
+        0%{left: -10px;}
+        50%{left: 1200px;}
+        100%{left: -10px;}
+    }
+    .hello1
+    {
+        width: 100%;
+        height: 830px;
+        background-image: url("logo3.png");
+        background-repeat: no-repeat;
+        background-size:600px;
+        background-position: 55%;
+        /* background-size:70%; */
+        padding: 50px;
+        opacity: 0.7;
+        /* margin: 150px; */
+    }
+    .box
+    {
+        width: 1300px;
+        height: 600px;
+        background-color:aliceblue;
+        margin: -100px;
+        margin-left: 80px;
+        opacity: 0.7;
+        border-radius: 20px;
+        text-align: center;
+    }
+    button{
+        position: relative;
+        right: 47px;
+        background-color: white;
+        border-color: white;
+        border: 0px;
+        border-radius: 15px;
+    }
+    #button:hover{
+        
+        color: blue;
+        cursor: pointer;
+    }
+    input
+    {
+        border-radius: 15px;
+    }
+    .ab
+    {
+        display: inline-block;
+        position: relative;
+        left: 370px;
+    }
+    .log{
+        background-color: aliceblue;
+        color: darkgray;
+        width: 80px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        position: fixed;
+        top: 5px;
+        right: 2px;
+        margin: 0px;
+        border: 1px black solid;
+        border-radius: 7px;
+        box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5);
+        z-index:+2;
+    }
+    .login
+    {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        margin: 3px;
+        margin-right: 6px;
+    }
+    .drop{
+        display: none;
+        flex-direction: column;
+        margin: 0px;
+        list-style: none;
+        position: absolute;
+        right: -15px;
+        top: 40px;
+        padding: 0px;
+        z-index: +1;
+        border-radius: 20px;
+        text-decoration: none;
+        border: 2px solid black;
+        box-shadow: 4px 4px 8px 4px rgb(0.5,0.5,0,0.5);
+        background-color: aliceblue;
+    }
+    .in{
+        font-family:cursive;
+        color: black;
+        /* background-color: aliceblue; */
+        width: 200px;
+        padding-right: 5px;  
+        padding-left: 5px;     
+        padding-top: 20px;
+        padding-bottom: 12px;
+        text-align: center;
+        /* position: relative; */
+        /* left: -160px; */
+        /* border-radius: 19px; */
+        font-size: 17px;
+         /* border-bottom: 0.5px solid gray; */
+        /* border-style:var(); */
+        /* border-left: 0.5px solid black; */
+        text-decoration: none;
+        /* top: 35px; */
+        /* height: 60px; */
+        
+    }
+    div div:hover div{
+        display: flex;
+    }
+    li{
+        text-decoration: none;
+    }
+    .in:hover 
+    {
+       color: blueviolet;
+       font-size: 19px;
+    }
+    .hr{
+        width: 80%;
+        /* color: black; */
+        padding: 0%;
+        margin: 0%;
+        border: 1px solid gray;
+        position: relative;
+        left: 20px;
+    }
+    .bgblack
+    {
+        background-color: black;
+        width: 2000px;
+        height: 1400px;
+        opacity: 0.6;
+        margin: -100px;
+        z-index: -1;
+        position: relative;
+        top: -150px;
+    }
+    .store
+    {
+        text-decoration: none;
+        /* border: 2px solid white; */
+        border-radius: 20px;
+        padding: 8px;
+        font-size: 25px;
+        margin: 170px;
+        position: relative;
+        top: 270px;
+        font-family: cursive;
+        /* font-weight: bold; */
+        z-index: +3;
+    }
+    .store:hover{
+        color:blueviolet;
+        /* background-color: cyan; */
+        font-weight: bolder;
+        padding: 8px;
+        font-size: 28px;
+    }
+    h1{
+        margin: 170px;
+        position: relative;
+        top: 80px;
+        font-family:cursive;
+    }
+    .slide3
+    {
+        height: 50px;
+        width: 50px;
+        border: 2px solid none;
+        background-color: aliceblue;
+        border-radius: 0px 20px 20px 0px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2px;
+        border-left: 2px solid none;
+        display: block;
+        background-size: cover;
+        box-shadow: 0px 5px aqua;
+    }
+</style>
+<body>
+    <div class="bg1">
+    <div class="up"></div>
+    <div class="log">
+        <a href=""><img class="login" src="user-interface.png" alt=""></a>
+        <div><img  class="login" src="menu.png" alt="">
+        <div class="drop">
+                <a href="" class="in">Profile</a>
+                <hr class="hr">
+                <a href="" class="in">Other Services</a>
+                <hr class="hr">
+                <a href="" class="in">Job Requirement</a>
+                <hr class="hr">
+                <a href="" class="in">LogIn</a>
+        </div>
+    </div>
+        
+    </div>
+    <div class="up1">
+        
+    <p class="headi">Repurpose Wardrobe</p>
+    </div>
+    <span class="logo"><img id="logo" src="logo2.png" alt=""></span>
+    
+    <ul class="order">
+        <li class="index"><i class="fa fa-home"></i>&nbsp;<a href="#home"> Home</a></li>
+        <li class="index ser"> <a href="#services" id="ser"> Services&nbsp;<i class="fa fa-angle-down"></i></a>
+            <div>
+                <ul class="dropdown">
+                    <li class="dailogue"><a href="">Shoping</a> </li>
+                    <li class="dailogue"><a href="">Selling</a></li>
+                    <li class="dailogue"><a href="">Join</a></li>
+                    <li class="dailogue"><a href="">Profile</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="index"><a href="#about">AboutUs&nbsp;<i class="fa fa-angle-down"></i></a>
+            <div>
+                <ul class="dropdown">
+                    <li class="dailogue"><a href="">Mission</a> </li>
+                    <li class="dailogue"><a href="">Vission</a></li>
+                    <li class="dailogue"><a href="">Team</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="index"><a href="#contact"> Contact&nbsp;<i class="fa fa-angle-down"></i></a>
+            <div>
+                <ul class="dropdown">
+                    <li class="dailogue"><a href="">Phone</a></li>
+                    <li class="dailogue"><a href="">Help</a></li>
+                    <li class="dailogue"><a href="">Address</a></li>
+                </ul>
+            </div>
+        </li>
+        <div class="ab">
+        <input class="button" type="text" placeholder=" Search Your Item.. " style="width: 500px;">
+            <button class="button" id="button" type="submit" style="width: 40px; padding-left: 1px;"><i class="fa fa-search"></i></button>
+        </div>
+    </ul>
+    <div class="search">
+        
+</div>
+    <div class="box">
+        <h1>We hope you love the products we recommend!</h1>
+        <a href="" class="store">Go to Store</a>
+    </div>
+    <div class="slide">
+        <div>
+        <img class="gallery" src="hello.jpg" id="a" alt="">
+        </div>
+        <div >
+        <img  class="gallery" id="b" src="hello2.jpg" alt="">
+        </div>
+        <div >
+        <img  class="gallery" id="c" src="OIP (4).jpg" alt="">
+        </div>
+        <div >
+        <img  class="gallery" id="d" src="pexels-photo-1536619.jpeg" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="hello1">
+        <div class="hello"><a href=""><div style="height: 180px; width: 180px; border: 2px solid none; align-items: center;"></div></a></div>
+        <div class="bgblack"></div>
+    </div>
+    <!-- <div class="slide">
+        <div>
+        <img class="gallery" src="hello.jpg" id="a" alt="">
+        </div>
+        <div >
+        <img  class="gallery" id="b" src="hello2.jpg" alt="">
+        </div>
+        <div >
+        <img  class="gallery" id="c" src="OIP (4).jpg" alt="">
+        </div>
+        <div >
+        <img  class="gallery" id="d" src="pexels-photo-1536619.jpeg" alt="">
+        </div>
+    </div> -->
+    <div class="slide3"><i class="fa fa-angle-right"></i></div>
+    
+</body>
+</html>
