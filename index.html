@@ -153,7 +153,7 @@
     }
     @keyframes hel{
         0% { width:250px; height:250px; opacity:1;}
-        25% { width:300px; height:300px; opacity:1; font-display: ;}
+        25% { width:300px; height:300px; opacity:1;}
         50% { width:300px; height:300px; opacity:1;}
         100% { width:250px; height:250px; opacity:1;}
     }
@@ -215,21 +215,22 @@
     }
     @keyframes hel1{
         0%{left: -10px;}
-        50%{left: 1200px;}
+        50%{left: 1150px;}
         100%{left: -10px;}
     }
     .hello1
     {
         width: 100%;
         height: 830px;
-        background-image: url("logo3.png");
+        background-image: url("bg.jpg");
         background-repeat: no-repeat;
-        background-size:600px;
-        background-position: 55%;
+        background-size: 1400px;
+        background-position: 50%;
         /* background-size:70%; */
         padding: 50px;
         opacity: 0.7;
-        /* margin: 150px; */
+        background-color: white;
+        position: relative;
     }
     .box
     {
@@ -348,17 +349,6 @@
         position: relative;
         left: 20px;
     }
-    .bgblack
-    {
-        background-color: black;
-        width: 2000px;
-        height: 1400px;
-        opacity: 0.6;
-        margin: -100px;
-        z-index: -1;
-        position: relative;
-        top: -150px;
-    }
     .store
     {
         text-decoration: none;
@@ -386,11 +376,10 @@
         top: 80px;
         font-family:cursive;
     }
-    .slide3
-    {
-        height: 50px;
-        width: 50px;
-        border: 2px solid none;
+    .side1{
+        height: 105px;
+        width: 130px;
+        border: 2px solid black;
         background-color: aliceblue;
         border-radius: 0px 20px 20px 0px;
         justify-content: center;
@@ -398,8 +387,163 @@
         margin-top: 2px;
         border-left: 2px solid none;
         display: block;
+        background-image: url("hero.jpg");
         background-size: cover;
-        box-shadow: 0px 5px aqua;
+        box-shadow: 0px 5px black;
+        position: relative;
+        left: -100px;
+        top: -440px;
+
+    }
+    .button6{
+        display: none;
+        size: 50px;
+        position: relative;
+        /* border: 2px solid blue; */
+        color: blue;
+        border-radius: 10px;
+        padding: 5px;
+        top: -5px;
+        left: 10px;
+    }
+.button6:hover{
+        background-color: thistle;
+    }
+    #sign{
+        position: relative;
+        top: 24px;
+        left: 45px;
+    }
+    .side1:hover{
+        background-color: aliceblue;
+        width: 210px;
+        align-items: flex-end;
+    }
+    .side1:hover #sign{
+       display: none;
+    }
+    .side1:hover #im{
+       position: relative;
+       left: 12px;   
+    }
+.side1:hover .button6{
+        display: inline;
+    }
+    #btn{
+        /* display: none; */
+        text-decoration: none;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: large;
+    }
+    .button2{
+     margin-right: 0px;
+     border-radius: 15px 0px 0px 15px;
+     position: relative;
+     bottom: 100px;
+     height: 105px;
+     width: 130px;
+     border: 2px solid black;
+     background-color: aliceblue;
+     justify-content: flex-start;
+     align-items: flex-start;
+     background-image: url("hero1.jpg");
+     background-size: cover;
+     box-shadow: 2px 4px 2px 2px black;  
+    }
+    .side4{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        right: -52px;
+        top: -440px;
+    }
+    .button2:hover{
+        margin-left: 80%;
+        width: 230px;
+    }
+    .button2:hover #im2{
+     position: relative;
+     right: 1px;
+    }
+    .button3{
+        position: relative;
+        right: 180px;
+        bottom: 50px;
+        margin-left: -50px;
+        margin-top: -10px;
+    }
+    .button2:hover #sign2{
+        display: none;
+    }
+    .button2:hover .button3{
+        display: inline;
+    }
+    #sign2{
+        position: relative;
+        top: 10px;
+        left: 4px;
+    }
+    #button5
+    {
+        position: relative;
+        right: -20px;
+        top: 50px;
+    }
+    .heading4{
+        text-align: center;
+        font-weight: bold;
+        font-family: cursive;
+        text-shadow: 2px 2px cyan;
+        color: blueviolet;
+        position: relative;
+        top: -90px;
+    }
+    .boxes{
+       border: 3px solid red;
+       display: flex;
+       height: 100px;
+       flex-direction: column;
+       width: 80%;
+       align-items: center;
+       margin-left: 100px;
+       margin-top: 60px;
+       border-radius: 20px;
+       background-color: rgb(252, 229, 233);;
+       opacity: 0.6;
+    }
+    .flex{
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: -190px;
+        left: 30px;
+        height: 300px;
+    }
+    #a2{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: blueviolet;
+    }
+    #a2:hover{
+        color: blueviolet;
+        background-color: cyan;
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .boxes a{
+        text-decoration: none;
+        color:rebeccapurple;
+    }
+    .boxes h1{
+        font-size: 20px;
+        margin: 0px;
+        margin-top: 4px;
+        font-weight: bold;
+        color: darkblue;
+        position: relative;
+        top: -1px;
     }
 </style>
 <body>
@@ -485,7 +629,27 @@
     </div>
     <div class="hello1">
         <div class="hello"><a href=""><div style="height: 180px; width: 180px; border: 2px solid none; align-items: center;"></div></a></div>
-        <div class="bgblack"></div>
+        
+            <h1 class="heading4">Fashion Expert's Blogs</h1>
+       <div class="flex">
+           <div class="boxes">
+            <h1>Mrs, Rita</h1>   
+            <a href=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde blanditiis inventore consectetur tenetur delectus atque veniam inventore velit! Quaerat!.....</p></a>
+           </div>
+           <div class="boxes">
+            <h1>Mr, Rakesh</h1>   
+            <a href=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus inventore consectetur tenetur delectus atque neque eveniet ratione tempore.....</p></a>
+           </div>
+           <br>
+          <a id="a2" href=""> Click Here For More...</a>
+          <div class="side1">
+            <span class="button6"><a id="btn" href=""> Kid's Wear</a></span><a href="">&nbsp;<i id="sign" class="fa fa-angle-right fa-3x"></i></a> 
+         </div>
+         <div class="side4">
+            <div class="button2">
+             <i id="sign2" class="fa fa-angle-left fa-3x"></i><a href=""><img id="im2" src="hero1.png" alt="" height="100px" width="100px"></a> <span class="button6 button3" id="button5"><a id="btn" href=""> Adult's Wear</a></span>
+            </div>
+       </div>
     </div>
     <!-- <div class="slide">
         <div>
@@ -501,7 +665,7 @@
         <img  class="gallery" id="d" src="pexels-photo-1536619.jpeg" alt="">
         </div>
     </div> -->
-    <div class="slide3"><i class="fa fa-angle-right"></i></div>
+    <!-- <div class="slide3"><i class="fa fa-angle-right"></i></div> -->
     
 </body>
 </html>
